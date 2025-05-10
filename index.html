@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Productivity Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#121212', // VO-style dark background
+              secondary: '#1f1f1f',
+              accent: '#6366f1', // A vibrant accent
+              card: '#1e1e1e',
+              text: '#e0e0e0',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-primary text-text font-sans">
+    <div class="min-h-screen w-full">
+        <!-- Navbar -->
+        <nav class="w-full h-16 bg-secondary fixed top-0 left-0 flex items-center justify-between px-6 shadow-md z-50">
+            <h1 class="text-2xl font-bold tracking-wide">📊 Productivity Dashboard</h1>
+            <button class="bg-accent hover:bg-indigo-500 text-white px-4 py-2 rounded-lg transition duration-300">Change Theme</button>
+        </nav>
+
+        <!-- Weather UI Placeholder -->
+        <div id="wet-ui" class="w-full h-64 pt-40 px-20">
+            <div class="w-full h-full bg-card rounded-xl shadow-inner flex items-center justify-center text-lg text-gray-300">
+                Weather UI Placeholder
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <section   class=" absolute flex flex-wrap gap-x-20 p-6 pt-10 justify-center">
+            <div id="0" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
+                <img src="./6ff1420eff13056ec51bca5c8a7dd2bf.jpg" alt="" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-300">
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 1</h2>
+            </div>
+
+            <div id="1" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
+                <video  autoplay loop muted class="w-full h-full object-cover pointer-events-none opacity-90 hover:opacity-100 transition duration-300">
+                    <source src="./207982_large.mp4" type="video/mp4">
+                </video>
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 2</h2>
+            </div>
+
+            <div id="2" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
+                <img src="./cd66a86b507296b841af79861c6ff52f.jpg" alt="" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-300">
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 3</h2>
+            </div>
+
+            <div id="3" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
+                <video  autoplay loop muted class="w-full h-full object-cover pointer-events-none opacity-90 hover:opacity-100 transition duration-300">
+                    <source src="./ce9807b3800d50c23f3ffd16d6c22d70.mp4" type="video/mp4">
+                </video>
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 4</h2>
+            </div>
+        </section>
+
+        <!-- inside cards -->
+         <section class="hidden absolute top-0 left-0 w-full h-full">
+            <section class="inside bg-red-500 min-h-screen w-full absolute top-0 left-0">
+                <h1 class="text-6xl font-bold">to-do-list</h1>
+            </section>
+            <section class="inside bg-blue-500 min-h-screen w-full absolute top-0 left-0">
+                <h1 class="text-6xl font-bold">daily motivation</h1>
+            </section>
+            <section class="inside bg-primary min-h-screen w-full absolute top-0 left-0">
+                <h1 class="text-6xl font-bold">pomodoro</h1>
+            </section>
+            <section class="inside bg-primary min-h-screen w-full absolute top-0 left-0"></section>
+                <h1 class="text-6xl font-bold">daily</h1>
+            </section>
+         </section>
+         
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
