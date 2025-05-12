@@ -24,7 +24,7 @@
 <body class="bg-primary text-text font-sans">
     <div class="min-h-screen w-full">
         <!-- Navbar -->
-        <nav class="w-full h-16 bg-secondary fixed top-0 left-0 flex items-center justify-between px-6 shadow-md z-50">
+        <nav class="w-full h-16 bg-s-primary  top-0 left-0 flex items-center justify-between px-6 shadow-md z-50">
             <h1 class="text-2xl font-bold tracking-wide">📊 Productivity Dashboard</h1>
             <button class="bg-accent hover:bg-indigo-500 text-white px-4 py-2 rounded-lg transition duration-300">Change Theme</button>
         </nav>
@@ -37,47 +37,50 @@
         </div>
 
         <!-- Cards -->
-        <section   class=" absolute flex flex-wrap gap-x-20 p-6 pt-10 justify-center">
+        <section   class=" flex flex-wrap gap-x-20 p-6 pt-10 justify-center">
             <div id="0" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
-                <img src="./6ff1420eff13056ec51bca5c8a7dd2bf.jpg" alt="" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-300">
-                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 1</h2>
+                <img src="./assest/6ff1420eff13056ec51bca5c8a7dd2bf.jpg" alt="" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-300">
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75"> to-do-list</h2>
             </div>
 
             <div id="1" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
                 <video  autoplay loop muted class="w-full h-full object-cover pointer-events-none opacity-90 hover:opacity-100 transition duration-300">
-                    <source src="./207982_large.mp4" type="video/mp4">
+                    <source src="./assest/207982_large.mp4" type="video/mp4">
                 </video>
-                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 2</h2>
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Daily  Planner</h2>
             </div>
 
             <div id="2" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
-                <img src="./cd66a86b507296b841af79861c6ff52f.jpg" alt="" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-300">
-                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 3</h2>
+                <img src="./assest/cd66a86b507296b841af79861c6ff52f.jpg" alt="" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition duration-300">
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Motivation</h2>
             </div>
 
             <div id="3" class="custom-card w-80 h-72 rounded-xl overflow-hidden relative shadow-xl  shadow-gray-500 shadow-[10px_10px_20px] hover:shadow-[15px_10px_20px] transition-transform duration-200 active:scale-95">
                 <video  autoplay loop muted class="w-full h-full object-cover pointer-events-none opacity-90 hover:opacity-100 transition duration-300">
-                    <source src="./ce9807b3800d50c23f3ffd16d6c22d70.mp4" type="video/mp4">
+                <source src="./assest/ce9807b3800d50c23f3ffd16d6c22d70.mp4" type="video/mp4">
                 </video>
-                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">Card 4</h2>
+                <h2 class="absolute bottom-3 right-4 text-xl font-semibold bg-secondary px-3 py-1 rounded-md bg-opacity-75">promodoro</h2>
             </div>
         </section>
 
         <!-- inside cards -->
-         <section class="hidden absolute top-0 left-0 w-full h-full">
-            <section class="inside bg-red-500 min-h-screen w-full absolute top-0 left-0">
-                <h1 class="text-6xl font-bold">to-do-list</h1>
-            </section>
-            <section class="inside bg-blue-500 min-h-screen w-full absolute top-0 left-0">
-                <h1 class="text-6xl font-bold">daily motivation</h1>
-            </section>
-            <section class="inside bg-primary min-h-screen w-full absolute top-0 left-0">
-                <h1 class="text-6xl font-bold">pomodoro</h1>
-            </section>
-            <section class="inside bg-primary min-h-screen w-full absolute top-0 left-0"></section>
-                <h1 class="text-6xl font-bold">daily</h1>
-            </section>
-         </section>
+     <section> 
+        <section class="hidden inside-section bg-primary min-h-screen w-full absolute top-0 left-0">
+            <button class="absolute top-4 right-4 bg-red-500 text-white text-xl px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition duration-300 active:scale-90 active:bg-red-600">Close</button>
+            <h1 class="text-6xl text-gray-300 font-bold">to-do-list</h1>
+        </section>
+        <section class="hidden inside-section bg-primary min-h-screen w-full absolute top-0 left-0">
+            <button class="absolute top-4 right-4 bg-red-500 text-white text-xl px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition duration-300 active:scale-90 active:bg-red-600">Close</button>
+            <h1 class="text-6xl font-bold">Daily Planner</h1>
+        </section>
+        <section class="hidden inside-section bg-primary min-h-screen w-full absolute top-0 left-0">
+            <button class="absolute top-4 right-4 bg-red-500 text-white text-xl px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition duration-300 active:scale-90 active:bg-red-600">Close</button>
+            <h1 class="text-6xl font-bold">Motivation</h1>
+        </section>
+        <section class="hidden inside-section bg-primary min-h-screen w-full absolute top-0 left-0">
+            <button class="absolute top-4 right-4 bg-red-500 text-white text-xl px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition duration-300 active:scale-90 active:bg-red-600">Close</button>
+            <h1 class="text-6xl font-bold">Pomodoro</h1>
+        </section>
          
     </div>
     <script src="app.js"></script>
